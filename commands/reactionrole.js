@@ -4,7 +4,7 @@ module.exports = {
   name: "reactionrole",
   description: "Sets up a reaction role msg",
   async execute(message, args, Discord, client) {
-    const channel = process.env.REACTION_CHANNEL;
+    const channel = process.env.DJS_LEARNING_REACTION_CHANNEL;
     const weebRole = message.guild.roles.cache.find(
       (role) => role.name === "Team Weeb"
     );
